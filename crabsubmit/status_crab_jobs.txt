@@ -1,0 +1,51 @@
+crab status -d crablog_mc/crab_VBFHToTauTau_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (2111/2111)
+
+crab status -d crablog_mc/crab_MinBias_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    failed			  0.3% (  16/5646)
+     							       finished			 99.7% (5630/5646)
+ crab status -d crablog_mc/crab_GluGluHToTauTau_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (237/237)
+
+crab status -d crablog_mc/crab_DYJetsToLL_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    failed			  0.6% (  11/1711)
+     							       finished			 99.4% (1700/1711)
+crab status -d crablog_mc/crab_TT_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (1795/1795)
+
+crab status -d crablog_mc/crab_TTTo2L2Nu_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (6156/6156)
+
+crab status -d crablog_mc/crab_TTToSemiLepton_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (1895/1895)
+
+crab status -d crablog_mc/crab_QCDPt20to30_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    failed			 85.8% (1496/1743)
+     							       finished			 14.2% ( 247/1743) .......................
+
+crab status -d crablog_mc/crab_QCDPt30to50_Phase2HLTTDRSummer20ReRECOMiniAOD_withNewMB_CMSSW_1113_20201207/
+Jobs status:                    failed			 91.8% (832/906)
+     							       finished			  8.2% ( 74/906) ..........................
+
+crab status -d crablog_mc/crab_QCDPt50to80_Phase2HLTTDRSummer20ReRECOMiniAOD_withNewMB_CMSSW_1113_20201207/
+Jobs status:                    failed			 91.2% (499/547)
+     							       finished			  8.8% ( 48/547) .........................
+
+crab status -d crablog_mc/crab_QCDPt120to170_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (125/125)
+
+crab status -d crablog_mc/crab_QCDPt170to300_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (120/120)
+
+crab status -d crablog_mc/crab_QCDPt300to470_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (129/129)
+
+crab status -d crablog_mc/crab_QCDPt470to600_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (132/132)
+
+crab status -d crablog_mc/crab_QCDPt600toInf_Phase2HLTTDRSummer20ReRECOMiniAOD_CMSSW_1113_20201207/
+Jobs status:                    finished		100.0% (139/139)
+
+
+
+
