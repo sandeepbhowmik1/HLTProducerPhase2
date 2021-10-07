@@ -19,6 +19,17 @@ process.source = cms.Source("PoolSource",
     ),
     secondaryFileNames = cms.untracked.vstring()
 )
+#-------------------------------------------------------------------------------- 
+# L1 NN Tau Path 
+process.L1T_NNTau = cms.Path()
+process.load("L1Trigger.Phase2L1ParticleFlow.L1NNTauProducer_cff")
+process.L1NNTauProducer.L1PFObjects = cms.InputTag("l1pfCandidates","PF")
+process.L1T_NNTau += process.L1NNTauProducer
+
+process.L1NNTauProducerPuppi = process.L1NNTauProducer.clone()
+process.L1NNTauProducerPuppi.L1PFObjects = cms.InputTag("l1pfCandidates","Puppi")
+process.L1T_NNTau += process.L1NNTauProducerPuppi
+#-------------------------------------------------------------------------------- 
 
 #--------------------------------------------------------------------------------
 # L1 HPS Taus path 
@@ -70,7 +81,7 @@ process.RECOoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     fastCloning = cms.untracked.bool(False),
-    fileName = cms.untracked.string('NTuple_produce_HLT_CrossTrigger_test7.root'),
+    fileName = cms.untracked.string('NTuple_produce_HLT_CrossTrigger_10events.root'),
     outputCommands = cms.untracked.vstring(
         'drop *',
         'keep *_ak4GenJets*_*_*',                   ## PRESENT ONLY IN RAW
@@ -124,6 +135,8 @@ process.RECOoutput = cms.OutputModule("PoolOutputModule",
         'keep *_hltEgammaGsfElectronsUnseeded_*_*', ## Save HLT Electri Unseeded
         'keep *_hltPhase2L3Muons_*_*',              ## Save HLT Muon
         'keep *_hltPhase2L3MuonsNoID_*_*',          ## Save HLT Muon NoID
+        'keep *_genParticles_*_*',
+        'keep *_tauGenJetsSelectorAllHadrons_*_*',
     )
 
 )
@@ -810,6 +823,8 @@ process.schedule = cms.Schedule(*[
     process.MC_Photon100_Open_L1Seeded,
     process.MC_Photon100EB_TightID_TightIso_Open_L1Seeded,
 
+    # L1 NN Tau Path
+    process.L1T_NNTau,
 
     # L1 HPS Taus path
     process.L1T_HPSPFTau,
