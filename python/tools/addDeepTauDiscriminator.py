@@ -27,7 +27,8 @@ def addDeepTauDiscriminator(process, hlt_srcPFTaus, hlt_srcPFJets, hlt_srcVertic
     deepTauSequence += process.hltFixedGridRhoAll
 
     if not hasattr(process, "hltPrimaryVertexAssociation"):
-        from PhysicsTools.PatAlgos.slimming.primaryVertexAssociation_cfi import primaryVertexAssociation
+        #from PhysicsTools.PatAlgos.slimming.primaryVertexAssociation_cfi import primaryVertexAssociation
+        from CommonTools.RecoAlgos.primaryVertexAssociation_cfi import primaryVertexAssociation
         process.hltPrimaryVertexAssociation = primaryVertexAssociation.clone(
           particles = cms.InputTag('particleFlowTmp'),
           vertices = cms.InputTag(hlt_srcVertices),
